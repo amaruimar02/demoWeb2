@@ -1,0 +1,140 @@
+<html lang ="es">
+<head>
+
+<title>INICIO</title>
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+       
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        
+        h2 {
+		font-size:20 ;
+	    color : black ;
+	    text-align: center ;
+	    font-style: italic; 
+	}
+    
+    .sb { 
+	   text-align:center ;
+	   font-size: 25px ; 
+	   color: orange ; 
+	   font-style: italic ;
+	   font-family: arial black ; 
+	}
+    
+  
+		
+		
+    </style>
+	
+<script>
+        function mostrarFechaYHora() {
+            var fechaActual = new Date();
+
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var fechaFormateada = fechaActual.toLocaleDateString('es-ES', options);
+
+            var horaFormateada = fechaActual.toLocaleTimeString('es-ES');
+
+            document.getElementById('fecha').innerHTML = 'Fecha: ' + fechaFormateada;
+            document.getElementById('hora').innerHTML = 'Hora: ' + horaFormateada;
+        }
+
+        // Actualizar cada segundo
+        setInterval(mostrarFechaYHora, 1000);
+
+        // Mostrar la fecha y hora al cargar la página
+        mostrarFechaYHora();
+    </script>		
+
+</head>
+
+ <body style="background-color:#C9D1D0 ;">
+	 
+
+<header>
+        <img src="https://academiavoleibolcordoba.com/wp-content/uploads/2023/10/cabecera2023B-1024x425.jpg" width ="850" height="400" >
+        <h1><font color="#FA7D1C" > ACADEMIA VOLEIBOL CORDOBA</font></h1>
+</header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Patrocinadores</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+	
+
+
+	<p class= "sb" > Somos un club deportivo , con un objetivo serio y específico en torno al voleibol base de Córdoba y a la formación en valores de nuestros deportistas que, con ilusión y esfuerzo, alcanzarán las mayores cotas deportivas posibles.</p>
+
+	<hr>
+
+   <table border="0" cellspacing="30" cellpadding="0">
+	   
+	  <tr>				
+		
+		<td> <img src="https://academiavoleibolcordoba.com/wp-content/uploads/2023/10/GALERIA-HOME1.jpg" width="600" height="400" border="10" ></td> 
+		<td height="40" align="justify"><font color="#333"><font-size="2000">Actualmente contamos con más de 270 deportistas que se reparten en 17 equipos federados y de JDM en las categorías de benjamín, alevín, infantil, cadete, junior, juvenil y senior, tanto femenino como masculino. Nuestro proyecto es contar, a medio plazo, con un equipo en Super Liga Iberdrola, a nivel nacional, pero por encima de esto, acercar el Voleibol a los niños y fomentar este fantástico deporte</font-size></font></td>
+	
+	  </tr>
+		
+     <tr>
+		 <td align="justify">Nuestro club a presentado durante varios años , un campus de voleibol en córdoba . Ya vamos por la 8 edición de nuestro "Campus Voleibol Córdoba" , en el que participa , varias estrellas de el voleibol en la escuela de tecnificación ,como Rafa Pacual y entrenadores y jugadores de primer nivel de primer nivel </td>
+		 <td ><img src="https://static.eldiario.es/clip/50ff27f9-b9cf-4477-853a-59bcaea6532b_source-aspect-ratio_default_0.jpg" width="600" height="350" border="10"></td>
+		 
+     </tr>
+  	
+     <tr>
+		  <td ><img src="https://academiavoleibolcordoba.com/wp-content/uploads/2023/10/GALERIA-HOME2.jpg" width="600" height="400" border="10"></td>
+		 <td align="justify"> Este club , empezó por un proyecto pequeñito en un colegio de Córdoba . A la gente le fue interesando nuestro trato con las jugadoras y el interés que le poniamos a nuestros futuros jugadores de voleibol . Así logramos avanzar , y agrandarnos poco a poco . Siendo ahora unos de los equipos más conocidos en Andalucía , y de los mejores que hay en Córdoba , por no decir el mejor . Hemos logrado llegar muy lejos en diferentes ligas y campeonatos , y hemos mandado a jugadoras nuestra a equipos profesionales de superliga . ¿ Porque tu hija o hijo no podría ser el siguiente ?  </td>
+		
+		 
+     </tr>
+    
+    
+    </table>
+    
+    <br><br><br><br>
+    
+    <center>
+		<div id="fecha"></div>
+		<div id="hora"></div>
+	</center>
+  
+
+</body>
+
+
+<html>
